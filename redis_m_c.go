@@ -23,8 +23,8 @@ var (
 
 func init() {
 
-    flag.StringVar(&addr, "a", "10.35.165.33:16379", "redis addr")
-    flag.StringVar(&pwd, "p", "dh-easy4ip_2018", "redis pwd")
+    flag.StringVar(&addr, "a", "", "redis addr")
+    flag.StringVar(&pwd, "p", "", "redis pwd")
     flag.StringVar(&op, "o", "", "redis opration[insert,get,del]")
     flag.IntVar(&maxidle, "i", 2, "redis maxidle")
     flag.IntVar(&maxactive, "x", 4, "redis maxactive")
